@@ -41,7 +41,9 @@ const ProjectDetail = props => {
     <div className="main-section">
       <h1>{project.name}</h1>
       <h2>{project.description}</h2>
-      <h3>{project.completed ? "Completed" : "Not Completed"}</h3>
+      <h3 className="emphasized-text">
+        {project.completed ? "Completed" : "Not Completed"}
+      </h3>
       <div>
         <h2>Project Actions</h2>
         {actions.map(action => (

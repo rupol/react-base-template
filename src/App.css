@@ -156,7 +156,7 @@ main {
 }
 
 h1 {
-  font-family   : 'Knewave', cursive;
+  font-family   : Lato, sans-serif;
   text-transform: uppercase;
   padding-bottom: 2rem;
 }
@@ -168,7 +168,7 @@ h5,
 p,
 ul,
 button {
-  font-family: "Open Sans", sans-serif;
+  font-family: Lato, sans-serif;
 }
 
 h3,
@@ -186,15 +186,15 @@ h1 {
 h2 {
   font-size     : 3.5rem;
   font-weight   : 600;
-  text-transform: uppercase;
   letter-spacing: .5rem;
   font-size     : 2.5rem;
   margin        : 1rem;
 }
 
 h3 {
-  font-size: 2.2rem;
-  margin   : .5rem;
+  font-size  : 2.2rem;
+  margin     : .5rem;
+  line-height: 3rem;
 }
 
 h4 {
@@ -215,22 +215,25 @@ a {
   color: #000000;
 }
 
+.emphasized-text {
+  font-style: italic;
+}
+
 nav {
-  width           : 100%;
-  height          : 80px;
-  background-color: #f6c9f4;
-  display         : flex;
-  flex-flow       : row wrap;
-  justify-content : space-evenly;
-  align-items     : flex-end;
+  width          : 100%;
+  height         : 80px;
+  display        : flex;
+  flex-flow      : row wrap;
+  justify-content: space-evenly;
+  align-items    : flex-end;
 }
 
 .logo {
-  color         : #974ca7;
-  font-size     : 2.5rem;
-  font-family   : 'Knewave', cursive;
-  text-transform: uppercase;
-  padding       : 25px 20px;
+  color      : #BB1333;
+  font-size  : 2.5rem;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  padding    : 25px 20px;
 }
 
 nav a {
@@ -254,38 +257,6 @@ nav a.active {
   margin-top: 50px;
 }
 
-form {
-  max-width       : 500px;
-  margin          : 0 auto;
-  padding         : 2rem;
-  border          : none;
-  background-color: #000;
-  border-radius   : 0.5rem;
-  box-shadow      : 8px 8px 0px #70ccbf;
-  display         : flex;
-  flex-wrap       : wrap;
-  align-items     : center;
-  justify-content : center;
-}
-
-input {
-  width           : 100%;
-  height          : 6rem;
-  border          : none;
-  border-radius   : 4px;
-  outline         : none;
-  padding         : 0 2rem;
-  font-size       : 2.5rem;
-  font-family     : "Open Sans", sans-serif;
-  font-weight     : 600;
-  text-transform  : uppercase;
-  letter-spacing  : .5rem;
-  color           : #000;
-  background-color: #f3cc40;
-  margin          : 1rem;
-
-}
-
 input::placeholder {
   color: #000;
 }
@@ -297,9 +268,6 @@ button {
   -webkit-text-decoration: none;
   text-decoration        : none;
   border                 : none;
-  border-radius          : 4px;
-  color                  : #000;
-  background-color       : #06aed5;
   font-family            : "Open Sans", sans-serif;
   font-weight            : 600;
   text-transform         : uppercase;
@@ -309,13 +277,7 @@ button {
 }
 
 button:hover {
-  background-color: #91ebff;
-}
-
-.error {
-  color    : #e6673e;
-  margin   : 4rem auto;
-  max-width: 630px;
+  background-color: #BB1333;
 }
 
 .project-card {
@@ -323,14 +285,13 @@ button:hover {
   margin          : 3rem auto;
   padding         : 2rem;
   border          : none;
-  background-color: #000;
-  color           : #fff;
-  border-radius   : 0.5rem;
-  box-shadow      : 8px 8px 0px #70ccbf;
+  background-color: #F6F7FB;
+  color           : #000;
+  box-shadow      : 8px 8px 0px #242153;
 }
 
-.project-name {
-  color: #70ccbf;
+.project-name a {
+  color: #242153;
 }
 
 .project-buttons {
@@ -347,26 +308,17 @@ button:hover {
   -webkit-text-decoration: none;
   text-decoration        : none;
   border                 : none;
-  border-radius          : 4px;
   color                  : #000;
   margin                 : 2rem;
   padding                : 10px 14px;
 }
 
 .delete-button {
-  background-color: #e6673e;
+  background-color: #BB1333;
 }
 
 .delete-button:hover {
-  background-color: #ee835f;
-}
-
-.edit-button {
-  background-color: #f3cc40;
-}
-
-.edit-button:hover {
-  background-color: #f1d365;
+  background-color: rgb(177, 104, 118);
 }
 
 .loader {
